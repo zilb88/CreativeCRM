@@ -141,12 +141,57 @@
                 <h2>Profile</h2>
             </section>
 
-            <section class="ba-customers-tabs" style="height: 200px; background-color: #c1c1c1;">
-                <h2>Tabs</h2>
+            <!-- Tabs START -->
+            <section class="ba-customers-tabs" style="background-color: #c1c1c1;">
+                
+                <div class="ba-tabs">
+                    <div class="ba-tabs-header">
+                        <ul class="ba-tabs-buttons">
+                            <li><button class="button active ba-tabs__btn" data-tab='1'>Overview</button>
+                            </li>
+                            <li><button class="button ba-tabs__btn" data-tab='2'>Orders</button>
+                            </li>
+                            <li><button class="button ba-tabs__btn" data-tab='3'>Payments</button>
+                            </li>
+                            <li><button class="button ba-tabs__btn" data-tab='4'>Interactions</button>
+                            </li>
+                            <li><button class="button ba-tabs__btn" data-tab='5'>Customer feedback</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ba-tabs-content">
+                        <div class="ba-tabs-panel active" data-tab-index="1">tab panel 1</div>
+                        <div class="ba-tabs-panel" data-tab-index="2">tab panel 2</div>
+                        <div class="ba-tabs-panel" data-tab-index="3">tab panel 3</div>
+                        <div class="ba-tabs-panel" data-tab-index="4">tab panel 4</div>
+                        <div class="ba-tabs-panel" data-tab-index="5">tab panel 5</div>
+                    </div>
+
+                </div>
+
+
+
+
+
             </section>
+            <!-- Tabs END -->
 
             <section class="ba-customers-activity" style="height: 200px; background-color: #c1c1c1;">
-                <h2>Activity</h2>
+                <h2 class="ba-sub-title">Activity</h2>
+
+                <ul class="ba-activity-list">
+                    <li class="ba-activity-item">
+                        <img src="./images/lauren.png" alt="name" class="ba-activity__photo">
+                        <p class="ba-activity__info">
+                            Add new task <a href="#">Remind customer to complete payment</a>
+                            assignet to Lauren
+                        </p>
+                        <time class="ba-activity__time">
+                            Today 4
+                        </time>
+                    </li>
+                </ul>
             </section>
 
         </main>

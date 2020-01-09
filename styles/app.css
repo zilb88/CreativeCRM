@@ -294,3 +294,62 @@ button {
       color: #303841; }
   .ba-user__photo {
     margin-right: 1rem; }
+
+.ba-tabs-header {
+  background-color: #fff;
+  overflow: auto; }
+
+.ba-tabs-buttons {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0; }
+
+.ba-tabs__btn {
+  height: 60px;
+  display: block;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative; }
+  .ba-tabs__btn.active:after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #442a9d;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+
+.ba-tabs-panel {
+  display: none; }
+  .ba-tabs-panel.active {
+    display: block; }
+
+.ba-activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.ba-activity-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: .875rem 2rem .875rem 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.ba-activity__photo {
+  margin-right: 1rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-block; }
+  @media screen and (min-width: 991px) {
+    .ba-activity__photo {
+      margin-right: 60px; } }
+
+.ba-activity__time {
+  margin-left: auto; }
