@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creative CRM</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/app.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body>
+    <div class="ba-main-wrapper ba-customers">
+        <header class="ba-header ba-col-12 ba-col-md-3">
+            <div class="container1">
+
+                <div class="ba-header-top">
+                    <a href="#" class="ba-logo">CreaticeCRM</a>
+
+                    <div class="ba-notification-wrapper hidden-md">
+                        <button aria-label="new messages">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+
+                        <button aria-label="new notification">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                    </div>
+
+                    <button class="ba-menu-btn" aria-label="show menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <nav>
+                    <ul class="ba-menu">
+                        <li class="ba-menu__item ba-menu__item-user">
+                            <div class="ba-user">
+                                <a href="#" class="ba-user__link">
+                                    <img src="images/lauren.png" class="ba-user__photo" alt="Lauren">
+                                    <span class="ba-user__name">Hello Lauren</span>
+                                    <button id="showUserMenu">
+                                        <i class="fas fa-angle-down"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link">
+                                <i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link">
+                                <i class="fas fa-chart-pie"></i>
+                                Reports
+                            </a>
+                        </li>
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link active">
+                                <i class="fas fa-briefcase"></i>
+                                Customers
+                            </a>
+                        </li>
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link">
+                                <i class="fas fa-calendar-alt"></i>
+                                Calendar
+                            </a>
+                        </li>
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link">
+                                <i class="fas fa-tasks"></i>
+                                Tasks
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <main class="ba-col-12 ba-col-md-9">
+            <div class="ba-toolbar">
+                <div class="container ba-toolbar-wrapper">
+                    <nav class="ba-breadcrumbs">
+                        <ul class="ba-breadcrumbs__list">
+                            <li class="ba-breadcrumbs__item">
+                                <a href="#">Customers</a>
+                            </li>
+                            <li class="ba-breadcrumbs__item">
+                                <span>Max Jones</span>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="ba-search">
+                        <button class="hidden-md" id="showSearch" aria-label="search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <form action="" class="ba-search-form">
+                            <input type="search" placeholder="search" class="ba-search__input">
+                            <button aria-label="search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="ba-notification-wrapper hidden-sm">
+                        <button aria-label="new messages">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+
+                        <button aria-label="new notification">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                    </div>
+
+                    <div class="ba-user hidden-sm">
+                        <a href="#" class="ba-user__link">
+                            <img src="images/lauren.png" class="ba-user__photo" alt="Lauren">
+                            <span class="ba-user__name">Hello Lauren</span>
+                            <button id="showUserMenu">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="ba-customers-profile" style="height: 200px; background-color: #c1c1c1;">
+                <h2>Profile</h2>
+            </section>
+
+            <section class="ba-customers-tabs" style="height: 200px; background-color: #c1c1c1;">
+                <h2>Tabs</h2>
+            </section>
+
+            <section class="ba-customers-activity" style="height: 200px; background-color: #c1c1c1;">
+                <h2>Activity</h2>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
